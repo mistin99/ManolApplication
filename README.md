@@ -22,7 +22,7 @@ Built with Java spring boot,React js and MySQL
 * Confirmation token for validating user.
 * Secure password validation.
 * JWT token for authentication.
-* Custom hashing method for hashing passwords.
+* Hashing method for hashing passwords.
 * Stripe API for payments.
 * React js for user-friendly front-end.
 

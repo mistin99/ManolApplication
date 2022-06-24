@@ -1,0 +1,23 @@
+import axios from "axios";
+const GET_EVENT_REST_API_URL = "localhost:8080/event/get/1";
+const ENTER_EVENT_REST_API_URL_POST = "http://localhost:8080/registration";
+class EventsService {
+  getEvent() {
+    return axios.get(GET_EVENT_REST_API_URL);
+  }
+  enterEvent() {
+    let titleVal = document.getElementById("eventId").value;
+    let startDateVal = document.getElementById("startDateId").value;
+    let endDateVal = document.getElementById("endDateId").value;
+    let userIdVal = "2";
+    let eventToSave = {
+      title: titleVal,
+      startDate: startDateVal,
+      endDate: endDateVal,
+      userId: userIdVal,
+    };
+    console.log(titleVal);
+    return axios.post(ENTER_EVENT_REST_API_URL_POST, eventToSave);
+  }
+}
+export default new EventsService();

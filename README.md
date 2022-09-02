@@ -1,4 +1,4 @@
-### Ongoing project
+
 # PeriodScheduler
 Full stack web application for scheduling Todo list and monitoring monthly period information.
 
